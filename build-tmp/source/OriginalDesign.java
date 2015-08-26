@@ -14,33 +14,50 @@ import java.io.IOException;
 
 public class OriginalDesign extends PApplet {
 
-int birdX = 275;
+
+int colors = 0;
+//int brushSize = 5;
 
 public void setup()
 {
-	size(400, 400);
+	size(600, 400);
+	background(255);
 }
 public void draw()
 {
-	background(255);
-    bird();
+	tools();
 }
-public void bird()
-{
-	noStroke();
-	fill(0);
-	rect(birdX+38, 50, 5, 10); //left leg
-	fill(105); 
-	arc(birdX+40, 60, 75, 75, 0, PI); //body
-	triangle(birdX-10, 45, birdX-45, 55, birdX-10, 65); //beak
-	ellipse(birdX, 50, 50, 50); //head
-	fill(0);
-	ellipse(birdX-10, 40, 7,7); //eye
-	arc(birdX+43, 65, 45, 45, 0, PI); //wing
+
+public void mouseDragged() {
+	paint();
+}
+
+public void paint(){
+	fill(colors);
+	ellipse(mouseX, mouseY, 15, 15);
+}
+
+public void tools(){
 	fill(255);
-	ellipse(birdX-9, 39, 3,3); //lightcatcher
+	rect(0, 0, 100, 399); //left side
 
+	int rightY = 0; 
+	while(rightY<399){ //loop for right side
+		rect(500, rightY, 100, 133); //right small box
+		rightY += 133;
+	}
 
+	ellipse(550, 200, 15, 15); //erser image
+
+	fill(0);
+	textAlign(CENTER, CENTER); //text below//
+	textSize(70);
+	text("X", 550, 50);
+	textSize(15);
+	text("Clear", 550, 120);
+	text("Eraser", 550, 250);
+	text("Hold, click,\nand drag\nyour mouse\nto draw", 550, 340);
+	//text("Brush Size", 550, 380);
 }
   static public void main(String[] passedArgs) {
     String[] appletArgs = new String[] { "OriginalDesign" };
