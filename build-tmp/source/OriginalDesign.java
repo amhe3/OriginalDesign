@@ -16,6 +16,16 @@ public class OriginalDesign extends PApplet {
 
 
 int colors = 0;
+/*color red = color(255, 0, 0);
+color blue = color(0, 0, 128);
+color yellow = color(255, 255, 0);
+color black = color(0);
+color purple = color(148, 0, 211);
+color green = color(0, 100, 0);
+color orange = color(255, 140, 0);
+color brown = color(139, 69, 19);*/
+int[] a = { color(255, 0, 0), color(0, 0, 128), color(255, 255, 0), color(0) };
+int[] b = { color(148, 0, 211), color(0, 100, 0), color(255, 140, 0), color(139, 69, 19) };
 //int brushSize = 5;
 
 public void setup()
@@ -28,26 +38,42 @@ public void draw()
 	tools();
 }
 
-public void mouseDragged() {
+public void mouseDragged()
+{
 	paint();
 }
 
-public void paint(){
+public void paint()
+{
 	fill(colors);
 	ellipse(mouseX, mouseY, 15, 15);
 }
 
-public void tools(){
+public void erase()
+{
 	fill(255);
-	rect(0, 0, 100, 399); //left side
+	noStroke();
+	ellipse(550, 200, 15, 15); //eraser
+}
 
+public void tools()
+{	
+	fill(255);
 	int rightY = 0; 
 	while(rightY<399){ //loop for right side
 		rect(500, rightY, 100, 133); //right small box
 		rightY += 133;
 	}
 
-	ellipse(550, 200, 15, 15); //erser image
+	int left = 0;
+	while(left < 399){ //loop for left side
+		rect(0, left, 50, 100); //left small box
+		rect(50, left, 50, 100); //right small box
+		left += 100;
+	}
+
+	fill(255);
+	ellipse(550, 200, 15, 15); //eraser image
 
 	fill(0);
 	textAlign(CENTER, CENTER); //text below//
@@ -56,7 +82,7 @@ public void tools(){
 	textSize(15);
 	text("Clear", 550, 120);
 	text("Eraser", 550, 250);
-	text("Hold, click,\nand drag\nyour mouse\nto draw", 550, 340);
+	text("Hold, click,\nand drag\nyour mouse\nto draw.", 550, 340);
 	//text("Brush Size", 550, 380);
 }
   static public void main(String[] passedArgs) {
