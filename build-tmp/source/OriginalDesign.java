@@ -15,8 +15,9 @@ import java.io.IOException;
 public class OriginalDesign extends PApplet {
 
 
-int colors = 0;
-/*color red = color(255, 0, 0);
+int colors = color(255, 0, 0); //start with black
+/*
+color red = color(255, 0, 0);
 color blue = color(0, 0, 128);
 color yellow = color(255, 255, 0);
 color black = color(0);
@@ -24,8 +25,6 @@ color purple = color(148, 0, 211);
 color green = color(0, 100, 0);
 color orange = color(255, 140, 0);
 color brown = color(139, 69, 19);*/
-int[] a = { color(255, 0, 0), color(0, 0, 128), color(255, 255, 0), color(0) };
-int[] b = { color(148, 0, 211), color(0, 100, 0), color(255, 140, 0), color(139, 69, 19) };
 //int brushSize = 5;
 
 public void setup()
@@ -45,6 +44,7 @@ public void mouseDragged()
 
 public void paint()
 {
+	noStroke();
 	fill(colors);
 	ellipse(mouseX, mouseY, 15, 15);
 }
@@ -58,6 +58,7 @@ public void erase()
 
 public void tools()
 {	
+	stroke(0);
 	fill(255);
 	int rightY = 0; 
 	while(rightY<399){ //loop for right side
@@ -74,6 +75,22 @@ public void tools()
 
 	fill(255);
 	ellipse(550, 200, 15, 15); //eraser image
+	fill(255, 0, 0);
+	ellipse(25, 50, 15, 15); //red
+	fill(0, 0, 128);
+	ellipse(25, 150, 15, 15); //blue
+	fill(255, 255, 0);
+	ellipse(25, 250, 15, 15); //yellow
+	fill(0);
+	ellipse(25, 350, 15, 15); //black
+	fill(148, 0, 211);
+	ellipse(75, 50, 15, 15); //purple
+	fill(0, 100, 0);
+	ellipse(75, 150, 15, 15); //green
+	fill(255, 140, 0);
+	ellipse(75, 250, 15, 15); //orange
+	fill(139, 69, 19);
+	ellipse(75, 350, 15, 15); //brown
 
 	fill(0);
 	textAlign(CENTER, CENTER); //text below//
