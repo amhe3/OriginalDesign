@@ -19,7 +19,11 @@ void setup()
 void draw()
 {
 	tools();
-	if(mouseClicked && ) //HERE!!
+	/*if(mouseClicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0)
+	{
+		background(255);
+		tools();
+	}*/
 }
 
 void mouseDragged()
