@@ -54,6 +54,49 @@ void tools()
 	//text("Brush Size", 550, 380);
 }
 
+if(mouseClicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
+	{
+		fill(255);
+		rect(-1, -1, 602, 402);
+		tools();
+	}
+	if(mouseClicked && mouseX>500 && mouseX<600 && mouseY<266 && mouseX>133) //eraser
+	{
+		colors = color(255);
+	}
+	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //red
+	{
+		colors = color(255, 0, 0);
+	}
+	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<200 && mouseY>100) //blue
+	{
+		colors = color(0, 0, 128);
+	}
+	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<300 && mouseY>200) //yellow
+	{
+		colors = color(255, 255 0);
+	}
+	if(mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //black
+	{
+		colors = color(0, 0, 0);
+	}
+	if(mouseX>50 && mouseX<100 && mouseY<100 && mouseY>0) //purple
+	{
+		colors = color(255, 0, 0);
+	}
+	if(mouseX>50 && mouseX<100 && mouseY<200 && mouseY>100) //green
+	{
+		colors = color(0, 100, 0);
+	}
+	if(mouseX>50 && mouseX<100 && mouseY<300 && mouseY>200) //orange
+	{
+		colors = color(255, 140, 0);
+	}
+	if(mouseX>50 && mouseX<100 && mouseY<400 && mouseY>300) //browm
+	{
+		colors = color(139, 69, 19);
+	}
+
 /*void mouseClicked()
 {
 	if(mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
@@ -115,47 +158,5 @@ void mouseDragged()
 void draw()
 {
 	tools();
-	if(mouseClicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
-	{
-		fill(255);
-		rect(-1, -1, 602, 402);
-		tools();
-	}
-	if(mouseClicked && mouseX>500 && mouseX<600 && mouseY<266 && mouseX>133) //eraser
-	{
-		colors = color(255);
-	}
-	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //red
-	{
-		colors = color(255, 0, 0);
-	}
-	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<200 && mouseY>100) //blue
-	{
-		colors = color(0, 0, 128);
-	}
-	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<300 && mouseY>200) //yellow
-	{
-		colors = color(255, 255 0);
-	}
-	if(mouseClicked && mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //black
-	{
-		colors = color(0, 0, 0);
-	}
-	if(mouseClicked && mouseX>50 && mouseX<100 && mouseY<100 && mouseY>0) //purple
-	{
-		colors = color(255, 0, 0);
-	}
-	if(mouseClicked && mouseX>50 && mouseX<100 && mouseY<200 && mouseY>100) //green
-	{
-		colors = color(0, 100, 0);
-	}
-	if(mouseClicked && mouseX>50 && mouseX<100 && mouseY<300 && mouseY>200) //orange
-	{
-		colors = color(255, 140, 0);
-	}
-	if(mouseClicked && mouseX>50 && mouseX<100 && mouseY<400 && mouseY>300) //browm
-	{
-		colors = color(139, 69, 19);
-	}
 }
 
