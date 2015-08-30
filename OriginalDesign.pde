@@ -73,6 +73,10 @@ void draw()
 		//fill(139, 69, 19);
 		//ellipse(mouseX, mouseY, 15, 15); //color image
 	}
+	if(mouseDragged && mouseX>100 && mouseX<500 && mouseY<400 && mouseY>0) //paint
+	{
+		paint();
+	}
 }
 
 /*void mouseClicked()
@@ -139,10 +143,10 @@ void draw()
 	}
 }*/
 
-void mouseDragged()
+/*void mouseDragged()
 {
 	paint();
-}
+}*/
 
 void paint()
 {
@@ -151,12 +155,12 @@ void paint()
 	ellipse(mouseX, mouseY, 15, 15);
 }
 
-void erase()
+/*void erase()
 {
 	fill(255);
 	noStroke();
 	ellipse(550, 200, 15, 15); //eraser
-}
+}*/
 
 void tools()
 {	
