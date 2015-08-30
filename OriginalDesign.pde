@@ -1,5 +1,5 @@
 
-color colors = color(0); //start with black
+color colors = color(0, 0, 0); //start with black
 
 void setup()
 {
@@ -78,7 +78,7 @@ void mouseClicked()
 	{
 		colors = color(255, 255, 0);
 	}
-	if(mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //black
+	if(mouseX>0 && mouseX<50 && mouseY<400 && mouseY>300) //black
 	{
 		colors = color(0, 0, 0);
 	}
