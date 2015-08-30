@@ -1,14 +1,5 @@
 
 color colors = color(0); //start with black
-/*
-color red = color(255, 0, 0);
-color blue = color(0, 0, 128);
-color yellow = color(255, 255, 0);
-color black = color(0);
-color purple = color(148, 0, 211);
-color green = color(0, 100, 0);
-color orange = color(255, 140, 0);
-color brown = color(139, 69, 19);*/
 //int brushSize = 5;
 
 void setup()
@@ -19,6 +10,9 @@ void setup()
 void draw()
 {
 	tools();
+	//fill(colors);
+	//stroke(0);
+	//ellipse(mouseX, mouseY, 15, 15); //color image
 }
 
 void mouseClicked()
@@ -88,7 +82,6 @@ void mouseClicked()
 void mouseDragged()
 {
 	paint();
-	ellipse(mouseX, mouseY, 15, 15); //color image
 }
 
 void paint()
