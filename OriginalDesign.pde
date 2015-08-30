@@ -54,7 +54,7 @@ void tools()
 	//text("Brush Size", 550, 380);
 }
 
-void mouseClicked()
+/*void mouseClicked()
 {
 	if(mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
 	{
@@ -98,7 +98,7 @@ void mouseClicked()
 	{
 		colors = color(139, 69, 19);
 	}
-}
+}*/
 
 void paint()
 {
