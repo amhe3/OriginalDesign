@@ -69,7 +69,7 @@ void draw()
 	//fill(colors);
 	//stroke(0);
 	//ellipse(mouseX, mouseY, 15, 15); //color image
-	if(mouseclicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
+	/*if(mouseclicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
 	{
 		fill(255);
 		rect(-1, -1, 602, 402);
@@ -128,7 +128,7 @@ void draw()
 		colors = color(139, 69, 19);
 		//fill(139, 69, 19);
 		//ellipse(mouseX, mouseY, 15, 15); //color image
-	}
+	}*/
 	if(mouseDragged && mouseX>100 && mouseX<500 && mouseY<400 && mouseY>0) //paint
 	{
 		paint();
