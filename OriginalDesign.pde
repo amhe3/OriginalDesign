@@ -13,9 +13,69 @@ void draw()
 	//fill(colors);
 	//stroke(0);
 	//ellipse(mouseX, mouseY, 15, 15); //color image
+	if(mouseclicked && mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
+	{
+		fill(255);
+		rect(-1, -1, 602, 402);
+		tools();
+	}
+	if(mouseclicked && mouseX>500 && mouseX<600 && mouseY<266 && mouseX>133) //eraser
+	{
+		colors = color(255);
+		//fill(255);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //red
+	{
+		colors = color(255, 0, 0);
+		//fill(255, 0, 0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>0 && mouseX<50 && mouseY<200 && mouseY>100) //blue
+	{
+		colors = color(0, 0, 128);
+		//fill(0, 0, 128);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>0 && mouseX<50 && mouseY<300 && mouseY>200) //yellow
+	{
+		colors = color(255, 255 0);
+		//fill(255, 255 0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //black
+	{
+		colors = color(0, 0, 0);
+		//fill(0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>50 && mouseX<100 && mouseY<100 && mouseY>0) //purple
+	{
+		colors = color(255, 0, 0);
+		//fill(255, 0, 0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>50 && mouseX<100 && mouseY<200 && mouseY>100) //green
+	{
+		colors = color(0, 100, 0);
+		//fill(0, 100, 0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>50 && mouseX<100 && mouseY<300 && mouseY>200) //orange
+	{
+		colors = color(255, 140, 0);
+		//fill(255, 140, 0);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
+	if(mouseclicked && mouseX>50 && mouseX<100 && mouseY<400 && mouseY>300) //browm
+	{
+		colors = color(139, 69, 19);
+		//fill(139, 69, 19);
+		//ellipse(mouseX, mouseY, 15, 15); //color image
+	}
 }
 
-void mouseClicked()
+/*void mouseClicked()
 {
 	if(mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
 	{
@@ -77,7 +137,7 @@ void mouseClicked()
 		//fill(139, 69, 19);
 		//ellipse(mouseX, mouseY, 15, 15); //color image
 	}
-}
+}*/
 
 void mouseDragged()
 {
