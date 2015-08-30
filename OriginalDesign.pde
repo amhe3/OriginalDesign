@@ -54,7 +54,6 @@ void tools()
 	//text("Brush Size", 550, 380);
 }
 
-
 void mouseClicked()
 {
 	if(mouseX>500 && mouseX<600 && mouseY<133 && mouseY>0) //clear
@@ -65,7 +64,7 @@ void mouseClicked()
 	}
 	if(mouseX>500 && mouseX<600 && mouseY<266 && mouseX>133) //eraser
 	{
-		colors = color(255);
+		colors = color(255, 255, 255);
 	}
 	if(mouseX>0 && mouseX<50 && mouseY<100 && mouseY>0) //red
 	{
@@ -85,7 +84,7 @@ void mouseClicked()
 	}
 	if(mouseX>50 && mouseX<100 && mouseY<100 && mouseY>0) //purple
 	{
-		colors = color(255, 0, 0);
+		colors = color(148, 0, 211);
 	}
 	if(mouseX>50 && mouseX<100 && mouseY<200 && mouseY>100) //green
 	{
@@ -95,7 +94,7 @@ void mouseClicked()
 	{
 		colors = color(255, 140, 0);
 	}
-	if(mouseX>50 && mouseX<100 && mouseY<400 && mouseY>300) //browm
+	if(mouseX>50 && mouseX<100 && mouseY<400 && mouseY>300) //brown
 	{
 		colors = color(139, 69, 19);
 	}
